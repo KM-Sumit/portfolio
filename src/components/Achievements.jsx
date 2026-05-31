@@ -23,8 +23,11 @@ import sihCollege from './photo/achivment/sih.jpeg';
 
 // SIH SISTEC Ratibad images
 import sihRatibad1 from './photo/achivment/sihh.jpeg';
-import sihRatibad2 from './photo/achivment/Sih3.0.jpeg';
-import sihRatibad4 from './photo/achivment/siH3.0.jpeg';
+// import sihRatibad2 from './photo/achivment/Sih3.0.jpeg';
+// import sihRatibad4 from './photo/achivment/siH3.0.jpeg';
+
+import sihRatibad2 from './photo/achivment/sih3.0.jpeg';
+import sihRatibad4 from './photo/achivment/sih3.0.jpeg';
 import sihRatibad3 from './photo/achivment/sih.jpeg';
 
 // IIT Bombay images
@@ -33,7 +36,6 @@ import iitb2 from './photo/achivment/iitb2.jpeg';
 
 // Super 50 images
 import super1 from './photo/achivment/super1.jpeg';
-import superImg from './photo/achivment/super.jpeg';
 import ssuper from './photo/achivment/ssuper.jpeg';
 
 const achievements = [
