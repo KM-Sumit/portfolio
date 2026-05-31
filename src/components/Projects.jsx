@@ -7,6 +7,15 @@ import freelanceProjectImage from './photo/freelans/05ce30ff-abbd-40d2-8e26-6535
 import consoleImg from './photo/project/console.jpeg';
 import console2Img from './photo/project/console2.jpeg';
 
+// ye body wala hai 
+import projectScreenshot1 from './photo/project/Screenshot_2026-05-31_19_36_35.png';
+import projectScreenshot2 from './photo/project/Screenshot_2026-05-31_19_36_51.png';
+import projectScreenshot3 from './photo/project/Screenshot_2026-05-31_19_36_56.png';
+
+// ye gd wala hai
+ import projectImage4 from './photo/project/0f861357-2b12-44cc-9b78-85916ad416c5.jpeg';
+import projectImage5 from './photo/project/75b8045b-e2a6-45d3-a704-4d002f13f4bb.jpeg';
+
 const projects = [
     {
         id: 1,
@@ -17,9 +26,10 @@ const projects = [
         github: 'https://github.com/Sumit785-dot/body-language-detector',
         live: null,
         images: [
-            'https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=800&h=500&fit=crop',
-            'https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=800&h=500&fit=crop',
-            'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800&h=500&fit=crop',
+            projectScreenshot1,
+            projectScreenshot2,
+            projectScreenshot3,
+
         ],
     },
     {
@@ -31,9 +41,8 @@ const projects = [
         github: 'https://github.com/Sumit785-dot/ai-gd-platform',
         live: null,
         images: [
-            'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&h=500&fit=crop',
-            'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop',
-            'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=500&fit=crop',
+            projectImage4,
+            projectImage5,
         ],
     },
     {
