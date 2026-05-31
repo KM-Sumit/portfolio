@@ -101,7 +101,7 @@ const achievements = [
         description: 'Cleared all 3 rounds: Coding MCQs, Problem solving, and Project presentation covering DSA and OOP.',
         icon: '⭐',
         rank: 'gold',
-        images: [super1, superImg, ssuper],
+        images: [super1, ssuper],
     },
 ];
 
