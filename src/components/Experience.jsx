@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Briefcase, Calendar, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { Briefcase, Calendar, ChevronLeft, ChevronRight, X, ExternalLink } from 'lucide-react';
 import freelanceProjectImage from './photo/freelans/05ce30ff-abbd-40d2-8e26-6535825aad61.jpeg';
+import visionProjectImage from './photo/freelans/vision.jpg';
 
 const experiences = [
     {
@@ -39,6 +40,25 @@ const experiences = [
         ],
         images: [
             'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop',
+        ],
+    },
+
+    {
+        id: 3,
+        type: 'Freelance Project',
+        title: 'Full Stack Developer',
+        company: 'Vision Institute MP',
+        duration: '2024',
+        description: 'Developed a comprehensive educational coaching platform for Vision Institute. Built a fully functional website featuring course management, video lectures, study material downloads, and an integrated payment gateway for seamless transactions.',
+        deliverables: [
+            'Built full-stack application using HTML, CSS, JavaScript, and Node.js',
+            'Integrated secure payment gateway for course and notes purchases',
+            'Created an interactive student review and rating system',
+            'Implemented responsive design and optimized for SEO',
+        ],
+        link: 'https://visioninstitutemp.in/',
+        images: [
+            visionProjectImage,
         ],
     },
 ];
@@ -163,11 +183,10 @@ const Experience = () => {
                                     <div className="card overflow-hidden" style={{ borderLeft: '4px solid transparent', borderImage: 'linear-gradient(to bottom, #06b6d4, #8b5cf6) 1' }}>
                                         <div className="p-6">
                                             <div className="flex items-center gap-2 mb-4 flex-wrap">
-                                                <span className={`px-3 py-1 text-xs font-semibold rounded-full ${
-                                                    exp.type === 'Freelancing'
+                                                <span className={`px-3 py-1 text-xs font-semibold rounded-full ${exp.type === 'Freelancing'
                                                         ? 'bg-emerald-50 text-emerald-600 border border-emerald-200'
                                                         : 'bg-blue-50 text-blue-600 border border-blue-200'
-                                                }`}>
+                                                    }`}>
                                                     {exp.type}
                                                 </span>
                                                 <span className="flex items-center gap-1.5 text-xs text-muted font-medium">
@@ -192,6 +211,13 @@ const Experience = () => {
                                                     </li>
                                                 ))}
                                             </ul>
+
+                                            {exp.link && (
+                                                <a href={exp.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-semibold text-cyan-600 hover:text-cyan-700 transition-colors mt-4 bg-cyan-50 px-3 py-1.5 rounded-lg border border-cyan-100">
+                                                    <ExternalLink size={16} />
+                                                    View Live Website
+                                                </a>
+                                            )}
                                         </div>
 
                                         <div className="px-6 pb-6">
